@@ -1,7 +1,8 @@
+import "../Styles/text.css";
 const Text = ({ text }) => {
   return (
     <div>
-      <p>{text}</p>
+      <p className="text">{text}</p>
     </div>
   );
 };

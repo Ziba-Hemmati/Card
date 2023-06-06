@@ -4,18 +4,39 @@ import Text from "./Text";
 import Button from "./Button";
 import "../Styles/card.css";
 import "../Styles/image.css";
+import "../Styles/buttons.css";
 const Card = () => {
   return (
     <div className="container">
-      <Image image={<img />} />
+      <Image
+        image={<img src="../../public/Assets/car.jpeg" className="image" />}
+      />
       <Title title="Lizard" />
       <Text
-        text="Chevrolet is an iconic American car brand known for its reliable,
-        dependable, and affordable vehicles. Founded in 1911, Chevy has become
-        one of the most recognizable car brands in the world."
+        text={
+          <div>
+            <span className="text--bc">
+              Chevrolet is an iconic American car brand known
+            </span>{" "}
+            <span className="text--bc">
+              for its reliable, dependable, and affordable
+            </span>{" "}
+            <span className="text--bc">
+              vehicles. Founded in 1911, Chevy has become
+            </span>{" "}
+            <span className="text--bc">
+              one of the most recognizable car brands in the
+            </span>{" "}
+            <span className="text--bc">world.</span>
+          </div>
+        }
       />
-      <Button button={<button>Share</button>} />
-      <Button button={<button>LEARN MORE</button>} />
+      <div className="buttons--display">
+        <Button button={<button className="button left-btn">SHARE</button>} />
+        <Button
+          button={<button className="button right-btn">LEARN MORE</button>}
+        />
+      </div>
     </div>
   );
 };

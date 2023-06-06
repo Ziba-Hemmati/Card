@@ -1,0 +1,15 @@
+.buttons--display {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.016);
+  color: rgb(101, 181, 181);
+}
+.left-btn {
+  margin: 24px 0 14px 64px;
+}
+.right-btn {
+  margin: 24px 40px 14px 0px;
+}

@@ -1,0 +1,8 @@
+.text {
+  margin: 0px 20px;
+  color: #797474;
+  line-height: 22px;
+}
+.text--bc{
+  background-color: rgba(0, 0, 0, 0.016);
+}
