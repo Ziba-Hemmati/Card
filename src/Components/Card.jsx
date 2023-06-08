@@ -8,9 +8,7 @@ import "../Styles/buttons.css";
 const Card = () => {
   return (
     <div className="container">
-      <Image
-        image={<img src="../../public/Assets/car.jpeg" className="image" />}
-      />
+      <Image image={"../../public/Assets/car.jpeg"} />
       <Title title="Lizard" />
       <Text
         text={
