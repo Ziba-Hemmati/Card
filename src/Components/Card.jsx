@@ -13,8 +13,9 @@ const Card = ({ image, title, text, button }) => {
       <Text text={text} />
       <div className="buttons-container">
         <div className="buttons--display">
-          <Button button={button[0]} />
-          <Button button={button[1]} />
+          {button.map((text) => (
+            <Button button={text} />
+          ))}
         </div>
       </div>
     </div>
