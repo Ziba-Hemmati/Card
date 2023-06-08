@@ -13,27 +13,17 @@ const Card = () => {
       <Text
         text={
           <div>
-            <span className="text--bc">
-              Chevrolet is an iconic American car brand known
-            </span>{" "}
-            <span className="text--bc">
-              for its reliable, dependable, and affordable
-            </span>{" "}
-            <span className="text--bc">
-              vehicles. Founded in 1911, Chevy has become
-            </span>{" "}
-            <span className="text--bc">
-              one of the most recognizable car brands in the
-            </span>{" "}
-            <span className="text--bc">world.</span>
+            Chevrolet is an iconic American car brand known for its reliable,
+            dependable, and affordable vehicles. Founded in 1911, Chevy has
+            become one of the most recognizable car brands in the world.
           </div>
         }
       />
-      <div className="buttons--display">
-        <Button button={<button className="button left-btn">SHARE</button>} />
-        <Button
-          button={<button className="button right-btn">LEARN MORE</button>}
-        />
+      <div className="buttons-container">
+        <div className="buttons--display">
+          <Button button="SHARE" />
+          <Button button="LEARN MORE" />
+        </div>
       </div>
     </div>
   );
